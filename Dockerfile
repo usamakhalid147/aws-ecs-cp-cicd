@@ -1,11 +1,6 @@
 FROM python:3.6.1-alpine
  
-
-RUN mkdir -p /app
-
-COPY . /app
-
-WORKDIR /app
+COPY . .
 
 RUN pip install -r requirements.txt
 
